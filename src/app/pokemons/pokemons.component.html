@@ -1,0 +1,8 @@
+<div *ngFor="let pokemon of pokemons">
+  <p>{{ pokemon.pokeName }}</p>
+  <img [src]="pokemon.pokePic" alt="{{ pokemon.pokeName }}">
+</div>
+<div class="navigation-buttons">
+  <button (click)="onClickPrev()"  class="navigation-button">Previous</button>
+  <button (click)="onClickNext()"  class="navigation-button">Next</button>
+</div>
